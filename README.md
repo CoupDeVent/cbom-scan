@@ -1,6 +1,6 @@
 # Cryptographic Bill of Materials (CBOM) Scanner
 
-CBOM-Scan is a command-line tool that scans Python, Java, and JavaScript source code to inventory cryptographic assets and assess their quantum resilience. It produces a structured CBOM report to help teams identify algorithms at risk and prioritize migration toward post-quantum cryptography (PQC).
+CBOM-Scan is a command-line tool that scans Python, Java, and JavaScript source code to inventory cryptographic assets and assess their quantum resilience. It produces a structured CycloneDX CBOM report to help teams identify algorithms at risk and prioritize migration toward post-quantum cryptography (PQC).
 
 ## Why this tool
 
@@ -23,7 +23,7 @@ Supported algorithms include AES, DES/3DES, RC4, ChaCha20, RSA, ECDSA/ECDH, Ed25
 - Recursive scan of `.py`, `.java`, `.js`, `.jsx`, and `.ts` files
 - Regex-based detection rules with OID references where standardized
 - Per-finding metadata: file, line, snippet, algorithm, quantum impact, risk level
-- JSON report with aggregate metrics (by language, category, quantum impact, risk level)
+- CycloneDX JSON report (spec 1.7) with aggregate metrics (by language, category, quantum impact, risk level)
 - Post-quantum algorithm detection to surface already-migrated components
 
 ## Usage
@@ -32,7 +32,7 @@ Supported algorithms include AES, DES/3DES, RC4, ChaCha20, RSA, ECDSA/ECDH, Ed25
 python3 main.py <target-directory> --output report.json
 ```
 
-If `--output` is omitted, the report is printed to standard output.
+If `--output` is omitted, the CycloneDX JSON report is printed to standard output.
 
 ## Project structure
 
@@ -52,4 +52,3 @@ If `--output` is omitted, the report is printed to standard output.
 - Detection is regex-based and line-oriented, no AST or data-flow analysis.
 - Dynamic imports, reflection, and custom cryptographic implementations are likely missed (see `sample/undetected_patterns/`).
 - False positives are possible when algorithm names appear in comments or string literals.
-- Report format is currently a custom JSON schema, not yet CycloneDX v1.5 CBOM compliant.

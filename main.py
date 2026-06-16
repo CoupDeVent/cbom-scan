@@ -12,7 +12,7 @@ from scanner import scan_directory
 
 def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
-    parser = argparse.ArgumentParser(description="CBOM regex scanner using patterns.py")
+    parser = argparse.ArgumentParser(description="CBOM regex scanner using patterns.py (outputs CycloneDX v1.7 JSON)")
     parser.add_argument("target", help="Directory to scan")
     parser.add_argument("--output", "-o", help="Output JSON file path (optional)")
     return parser.parse_args()
