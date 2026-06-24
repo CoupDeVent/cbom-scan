@@ -377,24 +377,6 @@ def _build_patterns():
 CRYPTO_PATTERNS = _build_patterns()
 
 
-# Descriptive labels for quantum impact (useful for report/dashboard)
-QUANTUM_IMPACT_LABELS = {
-    "shor_breakable": "Breakable by Shor's algorithm (quantum computer)",
-    "grover_weakened": "Security reduced by Grover's algorithm (moderate impact)",
-    "already_weak": "Already deprecated, regardless of quantum risk",
-    "quantum_safe": "Post-quantum algorithm (resistant to Shor and Grover)",
-}
-
-# Color codes by risk level (compatible with the `rich` library)
-RISK_COLORS = {
-    "critical": "bold red",
-    "high": "red",
-    "medium": "yellow",
-    "low": "cyan",
-    "info": "green",
-}
-
-
 def get_patterns_for_language(language: str):
     """Return all rules applicable to a given language."""
     return [p for p in CRYPTO_PATTERNS if p["language"] == language]

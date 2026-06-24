@@ -1,0 +1,53 @@
+{
+  "name": "cbom-scan-dashboard",
+  "version": "1.0.0",
+  "description": "Desktop dashboard for cbom-scan - visualize cryptographic BOM reports",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && cross-env NODE_ENV=development electron .\"",
+    "build": "vite build",
+    "dist": "vite build && electron-builder",
+    "package:win": "vite build && electron-packager . \"CBOM Scan Dashboard\" --platform=win32 --arch=x64 --out=release --overwrite --prune=true",
+    "preview": "vite preview"
+  },
+  "build": {
+    "appId": "com.cbom-scan.dashboard",
+    "productName": "CBOM Scan Dashboard",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "win": {
+      "target": "portable"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "mac": {
+      "target": "dmg"
+    }
+  },
+  "dependencies": {
+    "lucide-react": "^0.383.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.0",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "vite": "^5.3.3",
+    "wait-on": "^7.2.0"
+  }
+}

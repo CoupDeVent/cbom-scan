@@ -22,3 +22,8 @@ dist/
 # System files
 .DS_Store
 Thumbs.db
+
+# dashboard
+dashboard/node_modules/
+dashboard/dist/
+dashboard/release/

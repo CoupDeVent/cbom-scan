@@ -1,0 +1,4646 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:c86e985c-42a6-4517-ba1d-916aa9eef9e9",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-06-22T15:31:23.107682+00:00",
+    "tools": [
+      {
+        "vendor": "cbom-scan",
+        "name": "CBOM Scanner",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "sample",
+      "version": "1.0.0",
+      "description": "Cryptographic assets inventory for sample",
+      "properties": [
+        {
+          "name": "cbom:targetPath",
+          "value": "C:\\cbom-scan\\sample"
+        },
+        {
+          "name": "cbom:totalFindings",
+          "value": "109"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "cbom:PY-008:detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py:6",
+      "type": "cryptographic-asset",
+      "name": "RSA",
+      "description": "PyCryptodome",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-008"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "6"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "from Crypto.PublicKey import RSA, ECC, DSA"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.1.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-009:detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py:10",
+      "type": "cryptographic-asset",
+      "name": "RSA",
+      "description": "lib cryptography",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-009"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "10"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "from cryptography.hazmat.primitives.asymmetric import rsa, ec, ed25519, x25519, dh"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.1.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-012:detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py:89",
+      "type": "cryptographic-asset",
+      "name": "Ed25519",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-012"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "89"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "private_key = ed25519.Ed25519PrivateKey.generate()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.3.101.112"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-013:detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py:108",
+      "type": "cryptographic-asset",
+      "name": "X25519",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-013"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "108"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "private_key = x25519.X25519PrivateKey.generate()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.3.101.110"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-013:detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py:132",
+      "type": "cryptographic-asset",
+      "name": "X25519",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-013"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "132"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "classical_private = x25519.X25519PrivateKey.generate()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.3.101.110"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py:159",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "159"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "\"post_quantum\": \"ML-KEM (via liboqs)\""
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py:169",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\asymmetric_crypto.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "169"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "\"future\": \"Migrate to ML-DSA for signing, ML-KEM for key exchange\""
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-008:detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java:16",
+      "type": "cryptographic-asset",
+      "name": "EC (ECDSA / ECDH)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-008"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "16"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "KeyPairGenerator kpg = KeyPairGenerator.getInstance(\"EC\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.10045.2.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-006:detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java:22",
+      "type": "cryptographic-asset",
+      "name": "RSA",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-006"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "22"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "KeyPairGenerator kpg = KeyPairGenerator.getInstance(\"RSA\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.1.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-008:detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java:30",
+      "type": "cryptographic-asset",
+      "name": "EC (ECDSA / ECDH)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-008"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "30"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "Signature sig = Signature.getInstance(\"SHA256withECDSA\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.10045.2.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-013:detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java:46",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-013"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "46"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "MessageDigest md = MessageDigest.getInstance(\"SHA-256\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-012:detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java:51",
+      "type": "cryptographic-asset",
+      "name": "SHA-1",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-012"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "51"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "MessageDigest md = MessageDigest.getInstance(\"SHA-1\");  // deprecated"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.3.14.3.2.26"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-001:detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java:64",
+      "type": "cryptographic-asset",
+      "name": "AES",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-001"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\CryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "64"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "Cipher cipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-002:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:18",
+      "type": "cryptographic-asset",
+      "name": "DES / 3DES",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-002"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "critical"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "18"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "Cipher cipher = Cipher.getInstance(\"DES/CBC/PKCS5Padding\");"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-002:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:28",
+      "type": "cryptographic-asset",
+      "name": "DES / 3DES",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-002"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "critical"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "28"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "Cipher cipher = Cipher.getInstance(\"DESede/CBC/PKCS5Padding\");"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-001:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:40",
+      "type": "cryptographic-asset",
+      "name": "AES",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-001"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "40"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "Cipher cipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-001:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:48",
+      "type": "cryptographic-asset",
+      "name": "AES",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-001"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "48"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "Cipher cipher = Cipher.getInstance(\"AES/GCM/NoPadding\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-006:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:66",
+      "type": "cryptographic-asset",
+      "name": "RSA",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-006"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "66"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "KeyPairGenerator kpg = KeyPairGenerator.getInstance(\"RSA\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.1.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-006:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:72",
+      "type": "cryptographic-asset",
+      "name": "RSA",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-006"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "72"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "Cipher cipher = Cipher.getInstance(\"RSA/ECB/OAEPWITHSHA256ANDMGF1PADDING\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.1.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-007:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:80",
+      "type": "cryptographic-asset",
+      "name": "DSA",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-007"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "80"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "KeyPairGenerator kpg = KeyPairGenerator.getInstance(\"DSA\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.10040.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-007:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:87",
+      "type": "cryptographic-asset",
+      "name": "DSA",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-007"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "87"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "Signature sig = Signature.getInstance(\"SHA256withDSA\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.10040.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-008:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:96",
+      "type": "cryptographic-asset",
+      "name": "EC (ECDSA / ECDH)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-008"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "96"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "KeyPairGenerator kpg = KeyPairGenerator.getInstance(\"EC\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.10045.2.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-008:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:106",
+      "type": "cryptographic-asset",
+      "name": "EC (ECDSA / ECDH)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-008"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "106"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "Signature sig = Signature.getInstance(\"SHA256withECDSA\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.10045.2.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-016:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:117",
+      "type": "cryptographic-asset",
+      "name": "PBKDF2",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-016"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "kdf"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "low"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "117"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "SecretKeyFactory factory = SecretKeyFactory.getInstance(\"PBKDF2WithHmacSHA256\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.5.12"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-011:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:126",
+      "type": "cryptographic-asset",
+      "name": "MD5",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-011"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "critical"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "126"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "MessageDigest md = MessageDigest.getInstance(\"MD5\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.2.5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-012:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:132",
+      "type": "cryptographic-asset",
+      "name": "SHA-1",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-012"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "132"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "MessageDigest md = MessageDigest.getInstance(\"SHA-1\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.3.14.3.2.26"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-013:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:138",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-013"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "138"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "MessageDigest md = MessageDigest.getInstance(\"SHA-256\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-013:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:144",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-013"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "144"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "MessageDigest md = MessageDigest.getInstance(\"SHA-512\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-014:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:150",
+      "type": "cryptographic-asset",
+      "name": "SHA-3",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-014"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "150"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "MessageDigest md = MessageDigest.getInstance(\"SHA3-256\");"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-010:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:158",
+      "type": "cryptographic-asset",
+      "name": "Diffie-Hellman",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-010"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "158"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "KeyPairGenerator kpg = KeyPairGenerator.getInstance(\"DH\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.3.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-010:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:165",
+      "type": "cryptographic-asset",
+      "name": "Diffie-Hellman",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-010"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "165"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "KeyAgreement ka = KeyAgreement.getInstance(\"DH\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.3.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-008:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:174",
+      "type": "cryptographic-asset",
+      "name": "EC (ECDSA / ECDH)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-008"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "174"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "KeyPairGenerator kpg = KeyPairGenerator.getInstance(\"EC\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.10045.2.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-008:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:181",
+      "type": "cryptographic-asset",
+      "name": "EC (ECDSA / ECDH)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-008"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "181"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "KeyAgreement ka = KeyAgreement.getInstance(\"ECDH\");"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.10045.2.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-015:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:191",
+      "type": "cryptographic-asset",
+      "name": "HMAC",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-015"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "mac"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "low"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "191"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "Mac mac = Mac.getInstance(\"Hmac\" + algorithm);"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JAVA-024:detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java:213",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JAVA-024"
+        },
+        {
+          "name": "cbom:language",
+          "value": "java"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\asymmetric_crypto\\ExtendedCryptoUtils.java"
+        },
+        {
+          "name": "cbom:line",
+          "value": "213"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "\"Quantum Ready: Plan migration to ML-KEM and ML-DSA\";"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-008:detected_vulnerabilities\\authentication\\auth_service.py:7",
+      "type": "cryptographic-asset",
+      "name": "RSA",
+      "description": "PyCryptodome",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-008"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\authentication\\auth_service.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "7"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "from Crypto.PublicKey import RSA"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.1.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-015:detected_vulnerabilities\\authentication\\auth_service.py:30",
+      "type": "cryptographic-asset",
+      "name": "MD5",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-015"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "critical"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\authentication\\auth_service.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "30"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.md5(password.encode()).hexdigest()  # MD5 broken!"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.2.5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-017:detected_vulnerabilities\\authentication\\auth_service.py:34",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "Arc OID NIST SHA-2",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-017"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\authentication\\auth_service.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "34"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.sha256((password + salt).encode()).hexdigest()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-006:detected_vulnerabilities\\authentication\\token_service.js:12",
+      "type": "cryptographic-asset",
+      "name": "RSA",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-006"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\authentication\\token_service.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "12"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const { publicKey, privateKey } = crypto.generateKeyPairSync('rsa', { modulusLength: 1024, publicKeyEncoding: { type: 's"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.1.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-006:detected_vulnerabilities\\authentication\\token_service.js:17",
+      "type": "cryptographic-asset",
+      "name": "RSA",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-006"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\authentication\\token_service.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "17"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const { publicKey, privateKey } = crypto.generateKeyPairSync('rsa', { modulusLength: 2048, publicKeyEncoding: { type: 's"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.1.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-012:detected_vulnerabilities\\authentication\\token_service.js:32",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-012"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\authentication\\token_service.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "32"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return crypto.createHash('sha256').update(data).digest('hex');"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-011:detected_vulnerabilities\\authentication\\token_service.js:36",
+      "type": "cryptographic-asset",
+      "name": "SHA-1",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-011"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\authentication\\token_service.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "36"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return crypto.createHash('sha1').update(data).digest('hex');  // deprecated"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.3.14.3.2.26"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-001:detected_vulnerabilities\\authentication\\token_service.js:42",
+      "type": "cryptographic-asset",
+      "name": "AES",
+      "description": "module crypto Node.js",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-001"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\authentication\\token_service.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "42"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const cipher = crypto.createCipheriv('aes-256-cbc', key, iv);"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-015:detected_vulnerabilities\\hash_functions\\hash_utilities.py:19",
+      "type": "cryptographic-asset",
+      "name": "MD5",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-015"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "critical"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\hash_functions\\hash_utilities.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "19"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.md5(data).hexdigest()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.2.5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-016:detected_vulnerabilities\\hash_functions\\hash_utilities.py:31",
+      "type": "cryptographic-asset",
+      "name": "SHA-1",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-016"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\hash_functions\\hash_utilities.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "31"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.sha1(data).hexdigest()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.3.14.3.2.26"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-017:detected_vulnerabilities\\hash_functions\\hash_utilities.py:37",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "Arc OID NIST SHA-2",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-017"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\hash_functions\\hash_utilities.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "37"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.sha224(data).hexdigest()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-017:detected_vulnerabilities\\hash_functions\\hash_utilities.py:47",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "Arc OID NIST SHA-2",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-017"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\hash_functions\\hash_utilities.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "47"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.sha384(data).hexdigest()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-018:detected_vulnerabilities\\hash_functions\\hash_utilities.py:59",
+      "type": "cryptographic-asset",
+      "name": "SHA-3 / SHAKE",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-018"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\hash_functions\\hash_utilities.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "59"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.sha3_224(data).hexdigest()"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-018:detected_vulnerabilities\\hash_functions\\hash_utilities.py:69",
+      "type": "cryptographic-asset",
+      "name": "SHA-3 / SHAKE",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-018"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\hash_functions\\hash_utilities.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "69"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.sha3_384(data).hexdigest()"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-019:detected_vulnerabilities\\hash_functions\\hash_utilities.py:93",
+      "type": "cryptographic-asset",
+      "name": "BLAKE2 (b/s)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-019"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\hash_functions\\hash_utilities.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "93"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.blake2b(data).hexdigest()"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-018:detected_vulnerabilities\\hash_functions\\hash_utilities.py:99",
+      "type": "cryptographic-asset",
+      "name": "SHA-3 / SHAKE",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-018"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\hash_functions\\hash_utilities.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "99"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.shake_128(data).hexdigest(length)"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-018:detected_vulnerabilities\\hash_functions\\hash_utilities.py:103",
+      "type": "cryptographic-asset",
+      "name": "SHA-3 / SHAKE",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-018"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\hash_functions\\hash_utilities.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "103"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.shake_256(data).hexdigest(length)"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-017:detected_vulnerabilities\\hash_functions\\hash_utilities.py:109",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "Arc OID NIST SHA-2",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-017"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\hash_functions\\hash_utilities.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "109"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "sha256_hash = hashlib.sha256()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-001:detected_vulnerabilities\\key_derivation\\key_manager.py:8",
+      "type": "cryptographic-asset",
+      "name": "AES",
+      "description": "PyCryptodome",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-001"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\key_manager.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "8"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "from Crypto.Cipher import AES"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-017:detected_vulnerabilities\\key_derivation\\key_manager.py:17",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "Arc OID NIST SHA-2",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-017"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\key_manager.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "17"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.sha256(master_password.encode() + salt).digest()  # 256-bit key"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-017:detected_vulnerabilities\\key_derivation\\key_manager.py:45",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "Arc OID NIST SHA-2",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-017"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\key_manager.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "45"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.sha256(api_key.encode()).hexdigest()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-023:detected_vulnerabilities\\key_derivation\\password_hashing.py:12",
+      "type": "cryptographic-asset",
+      "name": "bcrypt",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-023"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "kdf"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "low"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\password_hashing.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "12"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "import bcrypt"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-015:detected_vulnerabilities\\key_derivation\\password_hashing.py:25",
+      "type": "cryptographic-asset",
+      "name": "MD5",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-015"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "critical"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\password_hashing.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "25"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.md5(password.encode()).hexdigest()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.2.5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-016:detected_vulnerabilities\\key_derivation\\password_hashing.py:29",
+      "type": "cryptographic-asset",
+      "name": "SHA-1",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-016"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\password_hashing.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "29"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.sha1(password.encode()).hexdigest()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.3.14.3.2.26"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-017:detected_vulnerabilities\\key_derivation\\password_hashing.py:35",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "Arc OID NIST SHA-2",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-017"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\password_hashing.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "35"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.sha256(password.encode()).hexdigest()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-017:detected_vulnerabilities\\key_derivation\\password_hashing.py:43",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "Arc OID NIST SHA-2",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-017"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\password_hashing.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "43"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "h = hashlib.sha256(salt + password.encode()).hexdigest()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-023:detected_vulnerabilities\\key_derivation\\password_hashing.py:76",
+      "type": "cryptographic-asset",
+      "name": "bcrypt",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-023"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "kdf"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "low"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\password_hashing.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "76"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return bcrypt.hashpw(password.encode(), salt).decode()"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-023:detected_vulnerabilities\\key_derivation\\password_hashing.py:82",
+      "type": "cryptographic-asset",
+      "name": "bcrypt",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-023"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "kdf"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "low"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\password_hashing.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "82"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return bcrypt.checkpw(password.encode(), hashed.encode())"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-024:detected_vulnerabilities\\key_derivation\\password_hashing.py:90",
+      "type": "cryptographic-asset",
+      "name": "Argon2",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-024"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "kdf"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "low"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\password_hashing.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "90"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "ph = argon2.PasswordHasher()"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-024:detected_vulnerabilities\\key_derivation\\password_hashing.py:98",
+      "type": "cryptographic-asset",
+      "name": "Argon2",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-024"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "kdf"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "low"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\password_hashing.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "98"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "ph = argon2.PasswordHasher()"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-017:detected_vulnerabilities\\key_derivation\\password_hashing.py:110",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "Arc OID NIST SHA-2",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-017"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\password_hashing.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "110"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "h = hmac.new(key, message, hashlib.sha256)"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-020:detected_vulnerabilities\\key_derivation\\password_hashing.py:110",
+      "type": "cryptographic-asset",
+      "name": "HMAC",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-020"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "mac"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "low"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\key_derivation\\password_hashing.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "110"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "h = hmac.new(key, message, hashlib.sha256)"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:11",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "11"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "\"\"\"Generate an ML-KEM-768 key pair (NIST FIPS 203).\"\"\""
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-025:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:12",
+      "type": "cryptographic-asset",
+      "name": "ML-KEM (Kyber)",
+      "description": "liboqs-python",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-025"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "12"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.KeyEncapsulation(\"ML-KEM-768\") as kem:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:12",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "12"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.KeyEncapsulation(\"ML-KEM-768\") as kem:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:18",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "18"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "\"\"\"Encapsulate a shared key with ML-KEM-768.\"\"\""
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-025:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:19",
+      "type": "cryptographic-asset",
+      "name": "ML-KEM (Kyber)",
+      "description": "liboqs-python",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-025"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "19"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.KeyEncapsulation(\"ML-KEM-768\") as kem:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:19",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "19"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.KeyEncapsulation(\"ML-KEM-768\") as kem:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-025:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:25",
+      "type": "cryptographic-asset",
+      "name": "ML-KEM (Kyber)",
+      "description": "liboqs-python",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-025"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "25"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.KeyEncapsulation(\"ML-KEM-768\", secret_key) as kem:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:25",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "25"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.KeyEncapsulation(\"ML-KEM-768\", secret_key) as kem:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:31",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "31"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "\"\"\"Generate an ML-DSA-65 key pair (NIST FIPS 204).\"\"\""
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-026:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:32",
+      "type": "cryptographic-asset",
+      "name": "ML-DSA (Dilithium)",
+      "description": "liboqs-python",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-026"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "32"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.Signature(\"ML-DSA-65\") as signer:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:32",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "32"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.Signature(\"ML-DSA-65\") as signer:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:38",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "38"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "\"\"\"Sign a message with ML-DSA-65.\"\"\""
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-026:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:39",
+      "type": "cryptographic-asset",
+      "name": "ML-DSA (Dilithium)",
+      "description": "liboqs-python",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-026"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "39"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.Signature(\"ML-DSA-65\", secret_key) as signer:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:39",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "39"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.Signature(\"ML-DSA-65\", secret_key) as signer:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:43",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "43"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "\"\"\"Verify an ML-DSA-65 signature.\"\"\""
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-026:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:44",
+      "type": "cryptographic-asset",
+      "name": "ML-DSA (Dilithium)",
+      "description": "liboqs-python",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-026"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "44"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.Signature(\"ML-DSA-65\") as verifier:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:44",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "44"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "with oqs.Signature(\"ML-DSA-65\") as verifier:"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-029:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:50",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net: evolving API, configs, comments",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-029"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "50"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "\"\"\"Combine a classical X25519 secret and an ML-KEM secret for transition.\"\"\""
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-017:detected_vulnerabilities\\post_quantum\\pqc_migrate.py:52",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "Arc OID NIST SHA-2",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-017"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\post_quantum\\pqc_migrate.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "52"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return hashlib.sha256(classical_secret + pqc_shared).digest()"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-003:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:12",
+      "type": "cryptographic-asset",
+      "name": "DES / 3DES",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-003"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "critical"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "12"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const cipher = crypto.createCipheriv('des-cbc', key, iv);"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-004:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:18",
+      "type": "cryptographic-asset",
+      "name": "RC4",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-004"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "critical"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "18"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const cipher = crypto.createCipheriv('rc4', key, '');"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-001:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:26",
+      "type": "cryptographic-asset",
+      "name": "AES",
+      "description": "module crypto Node.js",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-001"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "26"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const cipher = crypto.createCipheriv('aes-256-cbc', key, iv);"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-001:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:32",
+      "type": "cryptographic-asset",
+      "name": "AES",
+      "description": "module crypto Node.js",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-001"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "32"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const cipher = crypto.createCipheriv('aes-256-gcm', key, iv);"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-005:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:41",
+      "type": "cryptographic-asset",
+      "name": "ChaCha20-Poly1305",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-005"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "41"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const cipher = crypto.createCipheriv('chacha20-poly1305', key, nonce);"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-006:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:51",
+      "type": "cryptographic-asset",
+      "name": "RSA",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-006"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "51"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const { publicKey, privateKey } = crypto.generateKeyPairSync('rsa', {"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.1.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-007:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:92",
+      "type": "cryptographic-asset",
+      "name": "EC (ECDSA / ECDH)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-007"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "92"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const { publicKey, privateKey } = crypto.generateKeyPairSync('ec', {"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.10045.2.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-008:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:123",
+      "type": "cryptographic-asset",
+      "name": "Ed25519 / X25519",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-008"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "123"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const { publicKey, privateKey } = crypto.generateKeyPairSync('ed25519', {"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-007:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:148",
+      "type": "cryptographic-asset",
+      "name": "EC (ECDSA / ECDH)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-007"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "148"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const { publicKey, privateKey } = crypto.generateKeyPairSync('ec', {"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.10045.2.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-009:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:166",
+      "type": "cryptographic-asset",
+      "name": "Diffie-Hellman",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-009"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "asymmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "shor_breakable"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "166"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "const dh = crypto.createDiffieHellman(2048);"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.3.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-010:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:175",
+      "type": "cryptographic-asset",
+      "name": "MD5",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-010"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "critical"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "175"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return crypto.createHash('md5').update(data).digest('hex');"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.2.5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-011:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:180",
+      "type": "cryptographic-asset",
+      "name": "SHA-1",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-011"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "already_weak"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "high"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "180"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return crypto.createHash('sha1').update(data).digest('hex');"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.3.14.3.2.26"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-012:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:185",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-012"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "185"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return crypto.createHash('sha256').update(data).digest('hex');"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-012:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:190",
+      "type": "cryptographic-asset",
+      "name": "SHA-2 (224/256/384/512)",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-012"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "190"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return crypto.createHash('sha512').update(data).digest('hex');"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-013:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:195",
+      "type": "cryptographic-asset",
+      "name": "SHA-3",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-013"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "hash"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "195"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return crypto.createHash('sha3-256').update(data).digest('hex');"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-015:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:207",
+      "type": "cryptographic-asset",
+      "name": "PBKDF2",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-015"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "kdf"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "low"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "207"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return crypto.pbkdf2Sync(password, salt, iterations, keyLength, 'sha256').toString('hex');"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "1.2.840.113549.1.5.12"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-017:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:212",
+      "type": "cryptographic-asset",
+      "name": "scrypt",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-017"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "kdf"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "low"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "212"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return crypto.scryptSync(password, salt, keyLength).toString('hex');"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-014:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:219",
+      "type": "cryptographic-asset",
+      "name": "HMAC",
+      "description": "",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-014"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "mac"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "low"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "219"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "return crypto.createHmac('sha256', key).update(message).digest('hex');"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-019:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:257",
+      "type": "cryptographic-asset",
+      "name": "ML-KEM (Kyber)",
+      "description": "@noble/post-quantum, liboqs-node, etc.",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-019"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "257"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "quantum: 'Transition to liboqs-node or wait for native ML-KEM/ML-DSA support'"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:JS-022:detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js:257",
+      "type": "cryptographic-asset",
+      "name": "PQC (generic - verify implementation)",
+      "description": "Catch-all safety net",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "JS-022"
+        },
+        {
+          "name": "cbom:language",
+          "value": "javascript"
+        },
+        {
+          "name": "cbom:category",
+          "value": "pqc"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "quantum_safe"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "info"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\crypto_examples.js"
+        },
+        {
+          "name": "cbom:line",
+          "value": "257"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "quantum: 'Transition to liboqs-node or wait for native ML-KEM/ML-DSA support'"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-001:detected_vulnerabilities\\symmetric_ciphers\\symmetric_ciphers.py:6",
+      "type": "cryptographic-asset",
+      "name": "AES",
+      "description": "PyCryptodome",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-001"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\symmetric_ciphers.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "6"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "from Crypto.Cipher import AES, DES, DES3, Blowfish, ARC4, ChaCha20"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-002:detected_vulnerabilities\\symmetric_ciphers\\symmetric_ciphers.py:42",
+      "type": "cryptographic-asset",
+      "name": "AES",
+      "description": "lib cryptography (hazmat)",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-002"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\symmetric_ciphers.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "42"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "algorithms.AES(key),"
+        },
+        {
+          "name": "cbom:oid",
+          "value": "2.16.840.1.101.3.4.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbom:PY-007:detected_vulnerabilities\\symmetric_ciphers\\symmetric_ciphers.py:57",
+      "type": "cryptographic-asset",
+      "name": "ChaCha20 / ChaCha20-Poly1305",
+      "description": "PyCryptodome / lib cryptography",
+      "properties": [
+        {
+          "name": "cbom:ruleId",
+          "value": "PY-007"
+        },
+        {
+          "name": "cbom:language",
+          "value": "python"
+        },
+        {
+          "name": "cbom:category",
+          "value": "symmetric"
+        },
+        {
+          "name": "cbom:quantumImpact",
+          "value": "grover_weakened"
+        },
+        {
+          "name": "cbom:riskLevel",
+          "value": "medium"
+        },
+        {
+          "name": "cbom:file",
+          "value": "detected_vulnerabilities\\symmetric_ciphers\\symmetric_ciphers.py"
+        },
+        {
+          "name": "cbom:line",
+          "value": "57"
+        },
+        {
+          "name": "cbom:snippet",
+          "value": "algorithms.ChaCha20(key, nonce),"
+        }
+      ]
+    }
+  ]
+}
